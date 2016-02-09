@@ -1,0 +1,40 @@
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8" />
+            <title>Visulize Stocks</title>
+            <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+       <link rel="stylesheet" href=
+      "http://cdn.rawgit.com/jtblin/angular-chart.js/master/dist/angular-chart.css" type=
+      "text/css" />
+      <script src="http://cdn.rawgit.com/nnnick/Chart.js/master/Chart.min.js" type=
+      "text/javascript">
+    </script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+      <script src=
+      "http://cdn.rawgit.com/jtblin/angular-chart.js/master/dist/angular-chart.js"
+      type="text/javascript">
+    </script>
+    <script src="stocksApp.js"></script>
+
+        </head>
+        <body ng-app="app">
+         
+         <div id="container" class="container">
+      <div class="row" ng-controller="PieCtrl">
+        <div class="col-lg-16 col-sm-18">
+          <div class="panel panel-default">
+            <div class="panel-heading">Stocks In Hand </div>
+            <div class="panel-body">
+             <canvas id="pie" class="chart chart-pie" chart-data="data" chart-   labels="labels" chart-legend="true" chart-series="series"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>    
+
+
+
+
+        </body>
+    </html>
